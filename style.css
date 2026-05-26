@@ -29,6 +29,46 @@ body {
     font-weight: 700;
 }
 
+.reveal {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+}
+
+.reveal-left {
+    transform: translateX(-50px);
+}
+
+.reveal-right {
+    transform: translateX(50px);
+}
+
+.reveal-up {
+    transform: translateY(50px);
+}
+
+.reveal-zoom {
+    transform: scale(0.96);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0) scale(1);
+}
+
+.services .service-card.reveal {
+    transition-duration: 2s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        transition: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+}
+
 /* Navigation Styles */
 .navbar {
     margin: 0;
