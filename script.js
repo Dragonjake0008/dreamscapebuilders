@@ -62,6 +62,27 @@ backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
+// Scroll reveal animations
+const revealElements = document.querySelectorAll('.reveal');
+
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -5% 0px'
+});
+
+revealElements.forEach((element) => {
+    const delay = Number(element.dataset.delay || 0);
+    element.style.setProperty('--reveal-delay', `${delay}ms`);
+    revealObserver.observe(element);
+});
+
 // work slider track
 const track = document.querySelector('.slider-track');
 const slots = Array.from(track.querySelectorAll('.slider-slot'));
