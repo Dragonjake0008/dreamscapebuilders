@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamscape Builders</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="Logo.jpeg" type="image/x-icon">
+</head>
+<body>
+
+    <main>
+
+        <!-- Hero Section (navbar moved inside so background sits behind it) -->
+          <section class="nav-hero">
+
+           <!-- Header (moved into hero) -->
+           <nav class="navbar">
+
+            <div class="nav-container">
+                <div class="logo"><img src="Logo.jpeg" alt="Dreamscape Builders Logo"></div>
+
+            <!-- Hamburger -->
+             <div class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+             </div>
+
+             <!-- Center Links -->
+              <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#pricing">Prices</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <div class="mobile-social">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+              </ul>
+
+              <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+
+         </nav>
+
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <h1>Dreamscape Builders</h1>
+                    <h2>Your Dream My Promise</h2>
+                    <p>
+                        Crafting <span class="bold">breathtaking lanscapes</span> that transform your outdoor space into a <span class="bold">living masterpiece</span>.
+                        From serene garden retreats to <span class="bold">functional luxury living</span>, we bring your <span class="bold">unique vision to life</span> 
+                        with precision and passion.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn primary">Book a consultation</a>
+                        <a href="#services" class="btn secondary">See Services</a>
+                    </div>
+                </div>
+            </section>
+          </section>
+         
+          <section class="about-section" id="about">
+            <div class="about-content">
+                <div class="text-column">
+                    <h2>About Us</h2>
+                    <p>
+                        At <span class="bold">Dreamscape Builders</span>, we turn your architectural visions into masterfully crafted
+                        realities. We specialise in <span class="bold">premium residential construction</span>, <span class="bold">innovative remodeling</span>,
+                        and <span class="bold">sustainable outdoor spaces</span> tailored to your unique lifestyle.
+                    </p>
+
+                    <p>
+                        From the initial blueprint to the final walkthrough, we prioritise clear communication,
+                        precise budgeting, and exceptional craftmanship. We believe that your home should be your personal sanctuary,
+                        designed with purpose and executed with flawless detail. Let us handle the complexities of construction while
+                        you enjoy watching your dream space come to life.
+                    </p>
+                </div>
+
+                <div class="image-column">
+                    <img src="About-image.png" alt="About Us Image">
+                </div>
+            </div>
+          </section>
+          
+
+          <section class="services" id="services">
+            <div class="service-card" data-modal="modal1">
+                <img src="antranias-landscaper-401880_1920.jpg" alt="" class="service-img">
+                <h3>Hardscaping</h3>
+                <p>
+                    Hardscaping uses non-living elements like stone, brick, and wood to add structure, 
+                    shape, and function to your outdoor space. From custom patios and walkways to retaining 
+                    walls and fire pits, we build the long-lasting foundation your landscape needs to look 
+                    beautiful and stay functional all year round.
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <div class="service-card" data-modal="modal2">
+                <img src="antranias-landscaper-409147_1920.jpg" alt="" class="service-img">
+                <h3>Softscaping</h3>
+                <p>
+                    breathes life into your garden by focusing on the living, horticultural elements of the landscape. 
+                    Our team expertly designs and installs a perfect combination of lush lawns, vibrant trees, seasonal 
+                    shrubs, and colourful flowers. This careful selection adds rich texture, movement, and enduring 
+                    natural beauty to your property.
+                </p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <div class="service-card" data-modal="modal3">
+                <img src="javallma-garden-2218786_1920.jpg" alt="" class="service-img">
+                <h3>Maintenance</h3>
+                <p>
+                    Landscape maintenance provides the ongoing care needed to keep outdoor 
+                    spaces healthy and pristine. Going beyond simple lawn mowing, it includes 
+                    comprehensive plant care, seasonal clean ups, weed management, and structural 
+                    monitoring. Our expert service ensures your property retains its beauty, safety, 
+                    and investment value throughout every season.
+                </p>    
+                <button class="read-more">Read More</button>
+            </div>
+          </section>
+
+          <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="antranias-landscaper-401880_1920.jpg" alt="" class="modal-hero">
+                    <h2>Service 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                        doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.
+                    </p>
+                </div>
+            </div>
+
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="antranias-landscaper-409147_1920.jpg" alt="" class="modal-hero">
+                    <h2>Service 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                        doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.
+                    </p>
+                </div>
+            </div>
+
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="javallma-garden-2218786_1920.jpg" alt="" class="modal-hero">
+                    <h2>Service 3</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+                        doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptas, doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque.
+                    </p>
+                </div>
+            </div>
+
+            <section class="work-slider" id="work">
+                <div class="slider-container">
+                    <button class="arrow left" aria-label="Previous images"><i class="fa-solid fa-chevron-left"></i></button>
+
+                    <div class="slider-track">
+                        <div class="slider-slot">
+                            <img src="antranias-landscaper-401880_1920.jpg" alt="">
+                        </div>
+                        <div class="slider-slot">
+                            <img src="antranias-landscaper-409147_1920.jpg" alt="">
+                        </div>
+                        <div class="slider-slot">
+                            <img src="javallma-garden-2218786_1920.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <button class="arrow right" aria-label="Next images"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </section>
+
+            <section class="pricing-section" id="pricing">
+                <h2>Our Pricing Plans</h2>
+                <div class="pricing-toggle">
+                    <span>Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="pricingToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>Yearly</span>
+                </div>
+
+                <div class="pricing-container">
+                    <div class="pricing-card">
+                        <h3>Basic Lawn Care</h3>
+                        <p class="price" data-month="£40" data-year="£400">£40</p>
+                        <ul>
+                            <li>Mowing every 2 weeks</li>
+                            <li>Basic Edging</li>
+                            <li>Leaf Blowing</li>
+                        </ul>
+                        <button>Choose Plan</button>
+                    </div>
+
+                    <div class="pricing-card popular">
+                        <div class="badge">Most Popular</div>
+                        <h3>Standard Maintenance</h3>
+                        <p class="price" data-month="£75" data-year="£750">£75</p>
+                        <ul>
+                            <li>Weekly Mowing</li>
+                            <li>Edging and Trimming</li>
+                            <li>Weed Control</li>
+                            <li>Seasonal clean-ups</li>
+                        </ul>
+                        <button>Choose Plan</button>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Premium Garden Care</h3>
+                        <p class="price" data-month="£120" data-year="£1200">£120</p>
+                        <ul>
+                            <li>Full Garden Maintenance</li>
+                            <li>Hedge trimming</li>
+                            <li>Plant care & Fertilising</li>
+                            <li>Priority scheduling</li>
+                        </ul>
+                        <button>Choose Plan</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE: FORM -->
+        <div class="contact-form">
+            <h3>Let's Talk</h3>
+            <h1>Contact Us</h1>
+            <p>Let's bring your dream garden to life. Fill out the form below to get started!</p>
+
+            <form id="contactForm">
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Full name" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email address" required>
+                </div>
+
+                <div class="input-group textarea">
+                    <i class="fa-solid fa-message" id="messageIcon"></i>
+                    <textarea placeholder="Your message" required></textarea>
+                </div>
+
+                <button type="submit" class="contact-btn">Send message</button>
+            </form>
+        </div>
+
+        <!-- RIGHT SIDE: MAP -->
+        <div class="contact-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.501!2d-1.949!3d52.306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDE4JzIxLjYiTiAxwrA1NScwNi4zIlc!5e0!3m2!1sen!2suk!4v0000000000"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+
+            <p class="map-text">Shaping beautiful outdoor landscapes across Redditch </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+        <div class="footer-social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+<hr>
+        <p class="copyright">© 2026 All Rights Reserved</p>
+    </footer>
+
+            <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-angles-up"></i></button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
