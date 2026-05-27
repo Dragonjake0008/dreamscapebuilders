@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -11,6 +12,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 :root {
@@ -110,6 +112,12 @@ body {
     margin-left: 15px;
     color: var(--button-bg);
     font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: var(--button-hover-bg);
+    transform: scale(1.2);
 }
 
 .mobile-social {
@@ -323,7 +331,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url('About-bg.png') no-repeat center center/cover;
+    background-color: var(--Main-green);
     padding: clamp(64px, 8vw, 96px) var(--section-inline-padding);
 }
 
@@ -647,6 +655,10 @@ body {
 }
 
 @media (max-width: 960px) {
+    .work-slider {
+        min-height: fit-content;
+    }
+
     .slider-container {
         padding: 0 52px;
     }
@@ -665,6 +677,10 @@ body {
 }
 
 @media (max-width: 680px) {
+    .work-slider {
+        min-height: fit-content;
+    }
+    
     .slider-container {
         padding: 0 48px;
     }
@@ -847,6 +863,10 @@ body {
     .pricing-card {
         min-height: unset;
     }
+
+    .pricing-toggle {
+        position: sticky;
+    }
 }
 
 input:checked + .slider {
@@ -869,6 +889,7 @@ input:checked + .slider:before {
 
 .contact-container {
     max-width: 1100px;
+    height: fit-content;
     margin: 0 auto;
     display: flex;
     gap: 40px;
@@ -977,19 +998,25 @@ color: var(--text-colour);
 .contact-map {
     flex: 1 1 450px;
     min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     margin-top: 0;
 }
 
 .contact-map iframe {
     width: 100%;
-    height: 380px;
+    aspect-ratio: 16 / 10;
+    min-height: 470px;
+    height: auto;
     border: none;
     border-radius: 16px;
     filter: saturate(110%);
+    display: block;
 }
 
 .map-text {
-    margin-top: 16px;
+    margin-top: 0;
     color: #5a5a5a;
     font-size: 14px;
 }
@@ -1000,14 +1027,19 @@ color: var(--text-colour);
     .contact-container {
         flex-direction: column;
         padding: clamp(32px, 4vw, 40px) clamp(24px, 3vw, 30px);
+        height: fit-content;
     }
 
     .contact-form h1 {
         font-size: 34px;
     }
 
+    .contact-map {
+        width: 100%;
+    }
+
     .contact-map iframe {
-        height: 280px;
+        aspect-ratio: 16 / 11;
     }
 }
 
@@ -1021,8 +1053,24 @@ color: var(--text-colour);
     }
 
     .contact-map iframe {
-        height: 220px;
+        aspect-ratio: 4 / 3;
+        min-height: 180px;
     }
+}
+
+@media (max-width: 400px) {
+  .contact-section,
+  .contact-container {
+    box-sizing: border-box;
+  }
+  .contact-form,
+  .contact-map {
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
+  .contact-map iframe {
+    border-radius: 0 0 16px 16px;
+  }
 }
 
 /* Footer Styles */
