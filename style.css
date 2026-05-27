@@ -540,7 +540,17 @@ body {
     position: relative;
     animation: slideUp 0.3s ease;
     max-height: 90vh;
-    overflow-y: auto;
+    height: 60%;
+    overflow-y: none;
+    overflow-x: scroll;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    margin-bottom: 15px;
 }
 
 @keyframes slideUp {
@@ -563,9 +573,15 @@ body {
 .close {
     position: absolute;
     top: 12px;
-    right: 18px;
+    right: 10px;
     font-size: 28px;
     cursor: pointer;
+    background-color: rgba(10, 143, 90, 0.568);
+    color: var(--pure-white);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-left: 7px;
 }
 
 /* Services Section Styles */
@@ -700,6 +716,14 @@ body {
 
     .slider-slot:first-child {
         border-radius: 15px;
+    }
+}
+
+@media (max-width: 520px) {
+    .arrow {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
     }
 }
 
@@ -1054,7 +1078,8 @@ color: var(--text-colour);
 
     .contact-map iframe {
         aspect-ratio: 4 / 3;
-        min-height: 180px;
+        min-height: 380px;
+        padding-bottom: 15px;
     }
 }
 
@@ -1069,7 +1094,7 @@ color: var(--text-colour);
     box-sizing: border-box;
   }
   .contact-map iframe {
-    border-radius: 0 0 16px 16px;
+    border-radius: 16px;
   }
 }
 
